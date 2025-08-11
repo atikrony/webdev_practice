@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Figtree-medium";
+  src: url("assets/fonts/static/Figtree-Medium.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  background-color: #f4d04e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0px;
+}
+
+.card {
+  width: 384px;
+  height: 522px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.bannerimage {
+  border-radius: 10px;
+  width: auto;
+  height: 200px;
+  margin: 24px;
+}
+
+.learningbutton {
+  width: 82px;
+  height: 29px;
+  border: none;
+  background-color: #f4d04e;
+  margin-left: 24px;
+  border-radius: 4px;
+  font-family: Figtree;
+  font-size: 14px;
+}
+
+#line {
+  font-family: Figtree-medium;
+  font-size: 14px;
+  margin: 12px 24px;
+}
+
+#headline {
+  font-family: Figtree;
+  font-size: 24;
+  margin: 12px 24px;
+}
+
+#paragraph {
+  font-family: Figtree-medium;
+  font-size: 16px;
+  margin: 12px 24px;
+  color: gray;
+}
+
+.user {
+  margin: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#userimage {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+#user-name {
+  font-family: Figtree;
+  font-size: 14px;
+  margin-left: 5.5px;
+  line-height: 32px;
+}
+
+.userplace {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 32px;
+  padding: 5px;
+}
