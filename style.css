@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  background-color: gainsboro;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  height: 100px;
+  width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card:hover {
+  height: 100px;
+  width: 200px;
+  color: white;
+  background-color: rgb(42, 108, 124);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

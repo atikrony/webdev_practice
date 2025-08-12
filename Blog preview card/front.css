@@ -25,11 +25,12 @@ body {
 
 .card {
   width: 384px;
-  height: 522px;
+  height: 505px;
   background-color: white;
   border-radius: 20px;
   display: flex;
   justify-content: center;
+  box-shadow: 8px 8px;
 }
 
 .bannerimage {
@@ -62,37 +63,93 @@ body {
   margin: 12px 24px;
 }
 
+#headline:hover {
+  color: #f4d04e;
+}
+
 #paragraph {
   font-family: Figtree-medium;
   font-size: 16px;
   margin: 12px 24px;
-  color: gray;
+  color: #6b6b6bff;
 }
 
-.user {
-  margin: 24px;
+.bottompart {
   display: flex;
-  flex-direction: row;
+  width: 150px;
+  height: 32px;
+  gap: 10px;
+  align-items: center;
+  margin: 24px 24px;
+}
+
+.container {
+  display: flex;
   align-items: center;
 }
 
-#userimage {
+.container > img {
   width: 32px;
-  height: 32px;
-  object-fit: cover;
 }
 
-#user-name {
+.username > p {
   font-family: Figtree;
-  font-size: 14px;
-  margin-left: 5.5px;
-  line-height: 32px;
+  font-size: 14;
 }
 
-.userplace {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 32px;
-  padding: 5px;
+@media screen and (max-width: 375px) {
+  .card {
+    width: 327px;
+    height: 490px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 8px 8px;
+  }
+
+  .bannerimage {
+    border-radius: 10px;
+    width: 279px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .learningbutton {
+    width: 73px;
+    height: 26px;
+    border: none;
+    background-color: #f4d04e;
+    border-radius: 4px;
+    font-family: Figtree;
+    font-size: 12px;
+  }
+
+  /*  */
+  #line {
+    font-family: Figtree-medium;
+    font-size: 12px;
+  }
+
+  #headline {
+    font-family: Figtree;
+    font-size: 20;
+  }
+
+  #paragraph {
+    font-family: Figtree-medium;
+    font-size: 14px;
+    color: #6b6b6bff;
+  }
+
+  .bottompart {
+    width: 150px;
+    height: 32px;
+    gap: 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
