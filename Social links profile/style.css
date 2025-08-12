@@ -1,0 +1,94 @@
+body {
+  background-color: #141414;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  margin: 0px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #1f1f1f;
+  width: 350px;
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dp > img {
+  width: 130px;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
+.dp > img:hover {
+  width: 130px;
+  border-radius: 30%;
+  transform: scale(1.2);
+}
+
+#fullname {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 20px 0px 10px 0px;
+}
+
+#location {
+  font-size: 16px;
+  font-weight: 650;
+  color: #c4f82a;
+  margin: 0px 0px 20px;
+}
+
+#bio {
+  color: white;
+  margin: 0px 0px 24px;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.allbutton {
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #333333;
+  transition: transform 0.5s ease, background-color 0.5s, color 0.5s;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.allbutton:hover {
+  background-color: #c4f82a;
+  color: black;
+  transform: scale(1.02);
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
