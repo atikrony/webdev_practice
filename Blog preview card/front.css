@@ -50,6 +50,14 @@ body {
   border-radius: 4px;
   font-family: Figtree;
   font-size: 14px;
+  transition: ease transform 0.5s, background-color 0.5s, color 0.5s;
+}
+
+.learningbutton:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: #111111;
+  color: #f4d04e;
 }
 
 #line {
@@ -62,10 +70,12 @@ body {
   font-family: Figtree;
   font-size: 24;
   margin: 12px 24px;
+  transition: ease color 0.5s, transform 0.5s;
 }
 
 #headline:hover {
   color: #f4d04e;
+  transform: scale(1.05);
 }
 
 #paragraph {

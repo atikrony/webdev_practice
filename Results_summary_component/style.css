@@ -1,0 +1,228 @@
+/* Import HankenGrotesk font family from assets */
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HankenGroteskmed";
+  src: url("./assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HankenGroteskbold";
+  src: url("./assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HankenGroteskboldextra";
+  src: url("./assets/fonts/static/HankenGrotesk-ExtraBold.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a::after {
+  text-decoration: none;
+  color: white;
+}
+
+* {
+  margin: 0px;
+  font-family: "HankenGrotesk", sans-serif;
+}
+body {
+  background-color: #ecf2ff;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Container  */
+
+.maincontainer {
+  background-color: white;
+  border-radius: 24px;
+  display: flex;
+  box-shadow: #533af6;
+}
+
+.left,
+.right {
+  width: 320px;
+  height: 450px;
+  padding: 40px;
+  border-radius: 34px;
+}
+
+/* left container  */
+
+.left {
+  background: linear-gradient(#7857ff, #2e2be9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  height: 170px;
+  width: 170px;
+  background: radial-gradient(
+    circle at center top,
+    #4e21ca 0%,
+    #2421ca 40%,
+    rgba(36, 33, 202, 0.3) 70%,
+    transparent 100%
+  );
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #c1b3ff;
+  font-family: HankenGroteskmed;
+  font-weight: 800;
+}
+#main-score {
+  font-family: HankenGrotesk;
+  font-size: 72px;
+  color: white;
+}
+
+.left-bottom {
+  text-align: center;
+  margin: 20px 50px;
+}
+
+#your-result {
+  font-size: 32px;
+  margin: 0px 30px 30px;
+  color: #c1b3ff;
+  font-family: HankenGroteskmed;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+#great {
+  font-size: 50px;
+  font-family: HankenGroteskbold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.left-bottom > p {
+  font-family: HankenGroteskmed;
+  color: white;
+}
+
+/* Right container  */
+
+#Summary {
+  font-family: HankenGroteskboldextra;
+  font-size: 32px;
+  margin-top: 35px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 320px;
+  height: 450px;
+  background-color: white;
+  padding-top: 20px;
+}
+
+.sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  width: 280px;
+  background-color: aqua;
+  padding: 10px 20px;
+  font-family: HankenGroteskboldextra;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.reaction {
+  background-color: #fff6f7;
+  border-radius: 12px;
+  color: #ff5757;
+}
+
+.memory {
+  background-color: #fffaf4;
+  border-radius: 12px;
+  color: #ffb01f;
+}
+
+.verbal {
+  background-color: #f2fdf9;
+  border-radius: 12px;
+  color: #00bd91;
+}
+
+.visual {
+  background-color: #f4f4fe;
+  border-radius: 12px;
+  color: #1125d4;
+}
+
+.left-sub {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.right-sub {
+  display: flex;
+  align-items: center;
+}
+
+.buttonsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  background-color: #303b59;
+  color: white;
+  border-radius: 30px;
+  font-family: "HankenGroteskbold";
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.5s;
+  margin: 0 auto;
+}
+
+.buttonsection:hover {
+  background-color: #7656fe;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 576px) {
+  .maincontainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
