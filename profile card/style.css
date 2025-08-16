@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-image: url("./assets/bg-pattern-top.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  width: 500px;
+  height: 500px;
+}
+
+.top {
+  display: flex;
+}
+
+.top > img {
+  width: 100px;
+  height: 100px;
+}
