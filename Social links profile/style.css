@@ -84,6 +84,7 @@ body {
   background-color: #c4f82a;
   color: black;
   transform: scale(1.02);
+  cursor: pointer;
 }
 
 a {
