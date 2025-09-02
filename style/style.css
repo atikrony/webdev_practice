@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
+
+.box {
+  outline: 2px solid red;
+  border: 2px solid red;
+}
+
+.silkscreen-regular {
+  font-family: "Silkscreen-reg", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.flex {
+  display: flex;
+}
+
+.silkscreen-bold {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  background-color: #2a2829;
+  display: flex;
+  height: 100vh;
+  margin: 0% 18em;
+  flex-direction: column;
+}
+
+* {
+  margin: 0%;
+}
+
+.header-main {
+  width: 100%;
+}
+
+.nav-bar {
+  margin: 5em 0em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-container {
+}
+
+.dp-img {
+  height: 69px;
+  border: 4px solid turquoise;
+}
+
+.logo-img {
+  height: 90px;
+}
+
+.right-container {
+  margin-bottom: 20px;
+}
+
+.ul-component {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  color: white;
+  margin-left: 2em;
+  position: relative;
+  overflow: hidden;
+  font-family: Silkscreen;
+  font-size: 1rem;
+}
+
+li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: white;
+  transition: width 0.4s ease-in;
+}
+
+li:hover::after {
+  width: 100%;
+  transition: width 0.4s ease-out;
+}
+
+.main-body {
+  justify-content: center;
+  margin: -5em 5em;
+  height: 40em;
+}
+
+.description-section {
+  text-align: center;
+  margin: 2em auto;
+  max-width: 600px;
+  padding: 1em;
+}
+
+.description-section p {
+  color: white;
+  font-family: Silkscreen;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+/* ############################ */
+/* .rotate-image {
+  width: 50%;
+  border-radius: 50%;
+  transform: rotate();
+} */
+
+.main-img {
+  width: 400px;
+  /* background-image: url("../resources/ironygif.gif"); */
+  background-repeat: no-repeat;
+  height: 400px;
+  transition: background-image 0.3s;
+}
+
+.rotate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  height: 500px;
+  position: absolute;
+}
+
+/* Rotating animation for circular image */
+
+.rotate-image {
+  margin: 20px;
+  width: 50%;
+  display: block;
+  border-radius: 50%;
+  transition: transform 3s ease;
+  animation: rotateCircle 8s linear infinite;
+  outline: 5px solid rgb(255, 0, 0, 0);
+  transition: outline 1s, box-shadow 0.5s ease-in;
+}
+
+.rotate-image:hover {
+  animation-play-state: paused;
+  outline: 3px solid rgb(175, 5, 5);
+  box-shadow: 0px 0px 40px rgb(255, 0, 0);
+}
+
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.description-section {
+  text-align: center;
+  margin: -8em auto 5em;
+  max-width: 800px;
+  padding: 1em;
+}
+.description-section p {
+  color: white;
+  font-family: Silkscreen;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* 4 boxes */
+
+.top-part {
+  padding: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.container {
+  background: #ffffff;
+  color: #222;
+  padding: 1em 2em;
+  text-align: center;
+  border-radius: 8px;
+  font-family: Silkscreen;
+  font-weight: 700;
+  font-size: 1.1em;
+  outline: 2px solid white;
+  position: relative;
+  overflow: hidden;
+}
+
+.container:hover {
+  background-color: #222;
+  color: white;
+  transition: color 0.5s ease-out, background-color 0.5s ease-out;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2em;
+  justify-items: center;
+  align-items: start;
+  margin: 2em 0;
+}
+.portfolio .ch {
+  width: 180px;
+  height: 220px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  color: #222;
+  overflow: hidden;
+  transition: transform 1s ease;
+  margin-bottom: 4em;
+}
+
+.ch:hover {
+  transform: scale(1.2);
+}
